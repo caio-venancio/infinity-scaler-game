@@ -1,7 +1,5 @@
 // BenchmarkScene.ts
-import Phaser from "phaser";
-
-export class BenchmarkScene extends Phaser.Scene {
+class BenchmarkScene extends Phaser.Scene {
   cubes= [];
   fpsText;
 
