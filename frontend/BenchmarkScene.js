@@ -51,6 +51,10 @@ const config = {
   width: 800,
   height: 600,
   parent: "game", // id do div no HTML
+  fps: {
+        target: 120, // Define o limite de FPS desejado (ex: 60)
+        // forceSetTimeOut: false // Use 'true' se quiser forçar mesmo em navegadores com V-Sync
+    },
   scene: [BenchmarkScene],
 };
 
