@@ -1,5 +1,5 @@
 // local-service.ts
-import { GAME_STATE } from "./common";
+import { GAME_STATE } from "../common/common";
 import { Service } from "./services";
 import type { PlayerSnapshot } from "./services"
 

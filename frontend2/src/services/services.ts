@@ -1,7 +1,7 @@
 // services.ts
 // import Phaser from "phaser";
-import { GAME_STATE } from "./common";
-import type { GameState } from "./common"
+import { GAME_STATE } from "../common/common";
+import type { GameState } from "../common/common"
 
 export interface PlayerSnapshot {
   id: string;

@@ -1,5 +1,5 @@
 import Phaser from "phaser";
-import { LocalService } from "./local-service";
+import { LocalService } from "../services/local-service";
 
 /**
  * Tipos auxiliares
