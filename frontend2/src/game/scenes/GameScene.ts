@@ -1,10 +1,12 @@
 import Phaser from "phaser";
-import { LocalService } from "../../services/local-service";
+// import { LocalService } from "../../services/local-service";
+import OnlineService from "../../services/OnlineService"
+// import { LocalService } from "../../services/local-service";
 
 type PlayerSpriteMap = Record<string, Phaser.GameObjects.Rectangle>;
 
 export class GameScene extends Phaser.Scene {
-  private service!: LocalService;
+  private service!: OnlineService;
   private players: PlayerSpriteMap = {};
   private cursors!: Phaser.Types.Input.Keyboard.CursorKeys;
 
@@ -13,7 +15,8 @@ export class GameScene extends Phaser.Scene {
   }
 
   create() {
-    this.service = new LocalService();
+    // this.service = new LocalService();
+    this.service = new OnlineService("ws://localhost:8080");
     this.service.connect();
 
     this.cursors = this.input.keyboard!.createCursorKeys();
